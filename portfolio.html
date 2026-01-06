@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style type="text/css">
+
+   
+        * {
+
+            box-sizing: border-box;
+            color: black;
+            background-color:rgba(231,232,224);
+           
+
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: black;
+          
+          
+           
+
+        }
+
+
+        header {
+
+            color: black;
+            
+
+            box-shadow: rgba(0, 0, 0, 0.304) 0px 0px 8px;
+            margin-top: -10px;
+            margin-left: -10px;
+
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            border-bottom: 1px solid black;
+
+
+        }
+
+        #about ~ section{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .project {
+
+
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+
+     
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+
+            color: black;
+        }
+
+        #about {
+            background-image: url("");
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+
+        }
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" style="color: rgb(255, 89, 0);font-size: 25px; font-weight: bold; text-shadow:rgba(255, 89, 0, 0.553) 0px 0px 8px; margin-left: 2%;">Sasi Kiran</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="about" style="display:flex; justify-content:center; align-items: center;">
+        <div style="font-size:50px; font-weight:bold; text-transform:capitalize;">
+            Hi,<br> i'm <span style="color: rgb(255, 89, 0);">Sasi Kiran</span><br>
+
+        </div>
+        
+
+       
+    </section>
+  
+
+    <section id="skills">
+        <div>
+            <h1>SKILLS</h1>
+            <div>
+                <h1>C Programming</h1>
+            </div>
+            <div>
+                <h1>HTML/CSS</h1>
+            </div>
+        </div>
+    </section>
+   
+
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project.</p>
+                <a href="project-link.com">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project.</p>
+                <a href="project-link.com">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project.</p>
+                <a href="project-link.com">View Project</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+   
+
+    <footer>
+        <p>&copy; 2006 Your Name. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>
